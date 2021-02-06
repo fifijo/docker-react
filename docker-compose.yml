@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    image: front-ui
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - "./app:/app:delegated"
+      - "./app/node_modules:delegated"
+    ports:
+      - 3000:3000
+    stdin_open: true
