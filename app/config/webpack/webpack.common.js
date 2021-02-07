@@ -1,5 +1,4 @@
 const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -14,7 +13,6 @@ module.exports = {
     ]
   },
   plugins: [
-        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve('src/client/index.html'),
             minify: {

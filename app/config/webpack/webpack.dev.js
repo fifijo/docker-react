@@ -19,7 +19,6 @@ module.exports = merge(common, {
         ]
     },
     devServer: {
-        // contentBase: path.resolve('src'),
         port: 3000,
         host: '0.0.0.0',
         watchOptions: {

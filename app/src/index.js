@@ -1,6 +1,4 @@
-import React from 'react'
-
-const App = () => ('Hello world 3')
+const App = () => ('Hello world')
 
 App.displayName = 'App'
 
