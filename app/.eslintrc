@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {},
+            {
+                "usePrettierrc": true
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "simple-import-sort/imports": "error"
+    },
+    "extends": [
+        "eslint:all",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

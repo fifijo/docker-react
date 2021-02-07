@@ -7,8 +7,8 @@ services:
       context: ./app
       dockerfile: Dockerfile
     volumes:
-      - "./app:/app:delegated"
-      - "./app/node_modules:delegated"
+      - "./app:/app"
+      - "./app/node_modules"
     ports:
       - 3000:3000
     stdin_open: true
