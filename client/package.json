@@ -1,13 +1,13 @@
 {
-    "name": "docker-frontend-app-web",
+    "name": "docker-react",
     "version": "1.0.0",
-    "description": "Frontend application - web",
+    "description": "Docker React boilerplate",
     "author": "fifijo - Krzysztof Perzanowski",
     "license": "MIT",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/fifijo/docker-frontend.git"
+        "url": "https://github.com/fifijo/docker-react.git"
     },
     "scripts": {
         "build": "npm-run-all build:webpack",

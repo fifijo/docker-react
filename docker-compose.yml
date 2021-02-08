@@ -4,11 +4,11 @@ services:
   app:
     image: front-ui
     build:
-      context: ./app
+      context: ./client
       dockerfile: Dockerfile
     volumes:
-      - "./app:/app"
-      - "./app/node_modules"
+      - "./client:/client"
+      - "./client/node_modules"
     ports:
       - 3000:3000
     stdin_open: true

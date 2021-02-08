@@ -1,4 +1,4 @@
-# 🚀 Welcome to Docker frontend boilerplate 👋
+# 🚀 Welcome to Docker Reactjs boilerplate 👋
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 
@@ -8,10 +8,21 @@
 <a href="https://eslint.org" target="_blank"> <img src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg" height="50" /> </a>
 <a href="https://prettier.io" target="_blank"> <img src="https://prettier.io/icon.png" height="50" /> </a>
 
+It is used to speed up setup when developping a project using React. The local directories are mounted into the containers, so changes will reflect immediately. However, changes to package.json will likely need to a rebuild.
+
 ## Install
 
 ```sh
 make build
+```
+
+## Commands
+
+```sh
+make build
+make up
+make stop
+make down
 ```
 
 ## Author
