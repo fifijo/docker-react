@@ -13,17 +13,17 @@ module.exports = {
     ]
   },
   plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve('src/client/index.html'),
-            minify: {
-                collapseWhitespace: true,
-                removeComments: true,
-                removeRedundantAttributes: true,
-                removeScriptTypeAttributes: true,
-                removeStyleLinkTypeAttributes: true,
-                useShortDoctype: true
-            },
-            inject: 'body'
-        })
-    ]
+    new HtmlWebpackPlugin({
+      template: path.resolve('src/client/index.html'),
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      },
+      inject: 'body'
+    })
+  ]
 }

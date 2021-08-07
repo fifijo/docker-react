@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './node_modules/index'
+import App from '../index'
 
 const jsx = <App />
 
