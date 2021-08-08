@@ -5,6 +5,13 @@
   "author": "fifijo - Krzysztof Perzanowski",
   "license": "MIT",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "react",
+    "reactjs",
+    "docker",
+    "boilerplate"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/fifijo/docker-react.git"
@@ -13,7 +20,11 @@
     "build": "npm-run-all build:webpack",
     "build:webpack": "webpack --config ./config/webpack/webpack.prod.js",
     "start": "npm-run-all server:development",
-    "server:development": "webpack serve --config ./config/webpack/webpack.dev.js"
+    "server:development": "webpack serve --config ./config/webpack/webpack.dev.js",
+    "prepare": "husky install",
+    "format:src": "prettier --write {,src/**/}*.js",
+    "pretty-quick": "pretty-quick --staged",
+    "lint": "eslint --fix -- ./src "
   },
   "dependencies": {
     "react": "17.0.2",
@@ -38,9 +49,9 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^7.0.1",
-    "lint-staged": "^11.1.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "webpack": "^5.49.0",
@@ -49,20 +60,18 @@
     "webpack-merge": "^5.8.0"
   },
   "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "lint-staged": {
-    "src/**/*.{js}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

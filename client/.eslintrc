@@ -1,7 +1,8 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react"
+    "react",
+    "sort-imports-es6-autofix"
   ],
   "env": {
     "browser": true,
@@ -24,14 +25,25 @@
         "usePrettierrc": true
       }
     ],
-    "react/react-in-jsx-scope": "off",
-    "simple-import-sort/imports": "error"
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      2,
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": [
+          "none",
+          "all",
+          "multiple",
+          "single"
+        ]
+      }
+    ]
   },
   "extends": [
     "eslint:all",
     "plugin:react/all",
-    "plugin:react-hooks/all",
-    "plugin:prettier/all"
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
   ],
   "settings": {
     "react": {

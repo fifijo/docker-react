@@ -1,5 +1,5 @@
-const App = () => ('Hello')
+const App = () => 'Hello';
 
-App.displayName = 'App'
+App.displayName = 'App';
 
-export default App
+export default App;
