@@ -6,20 +6,17 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   entry: {
-    app: './client/index.js'
-  },
-  module: {
-    rules: [
-      {
-        use: 'babel-loader',
-        test: /\.js$/,
-        exclude: /node_modules/
-      },
-    ]
+    app: './client/index.jsx'
   },
   devServer: {
-    port: 3000,
+    port: 8080,
     host: '0.0.0.0',
+    hotOnly: true,
+    sockPort: 8080,
+    overlay: {
+      warnings: true,
+      errors: true,
+    },
     watchOptions: {
       aggregateTimeout: 500,
       poll: 1000

@@ -10,4 +10,4 @@ services:
       - ./client:/app:delegated
       - /app/node_modules
     ports:
-      - 3000:3000
+      - 8080:8080
