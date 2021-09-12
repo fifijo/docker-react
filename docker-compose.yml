@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    image: front-ui
+    container_name: docker-react
     build:
       context: ./client
       dockerfile: Dockerfile

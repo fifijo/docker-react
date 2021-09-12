@@ -1,6 +1,9 @@
 .gitignore
 .dockerignore
-Dockerfile
 build
 node_modules
+README.md
+.husky
+LICENSE
+Makefile
 README.md
