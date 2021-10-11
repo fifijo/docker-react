@@ -1,4 +1,4 @@
-FROM node:16.6-alpine3.11
+FROM node:16.11-alpine3.11
 RUN mkdir -p /app
 WORKDIR /app
 COPY package.json yarn.* ./
